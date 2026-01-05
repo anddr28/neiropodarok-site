@@ -323,3 +323,98 @@ button,
 a {
   min-height: 44px;
 }
+
+/* =========================
+   MOBILE FIX (до 768px)
+   НИЧЕГО КРОМЕ МОБИЛИ
+========================= */
+@media (max-width: 768px) {
+
+  /* базовая стабилизация */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section,
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* HEADER */
+  .header {
+    position: sticky;
+  }
+
+  .nav {
+    display: none; /* мобильное меню уже есть */
+  }
+
+  /* HERO */
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-buttons a,
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  /* WHY / CARDS */
+  .why-grid,
+  .steps,
+  .examples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-card,
+  .step,
+  .example-card {
+    height: auto;
+    min-height: unset;
+  }
+
+  /* УБИРАЕМ НАЕЗД */
+  .why-card *,
+  .step *,
+  .example-card * {
+    position: static;
+  }
+
+  /
+
