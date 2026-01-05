@@ -206,3 +206,89 @@ a:focus, button:focus { outline: none; }
 @media (max-width:1000px){.why-grid{grid-template-columns:repeat(2,1fr)}.examples-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:700px){.why-grid{grid-template-columns:1fr}.examples-grid{grid-template-columns:1fr}.title{font-size:28px}.phone-mockup{width:300px}}
 @media (max-width:480px){.title{font-size:22px}.meta-row{flex-direction:column;gap:6px}.phone-mockup{width:280px}}
+
+/* =========================
+   MOBILE HERO FIX
+   ТОЛЬКО СМАРТФОНЫ
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO — аккуратный один экран */
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .hero-inner {
+    gap: 20px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-person {
+    max-height: 200px;
+    width: auto;
+  }
+
+  /* на мобиле — ТОЛЬКО центр */
+  .hero-person.left,
+  .hero-person.right {
+    display: none;
+  }
+
+  .hero-person.center {
+    transform: none !important;
+  }
+}
+
+/* =========================
+   HOW IT WORKS — MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .neon-step {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    min-height: unset;
+  }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .step-body {
+    text-align: left;
+  }
+
+  .step-body h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .step-body p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
