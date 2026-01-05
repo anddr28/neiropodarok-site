@@ -418,3 +418,34 @@ a {
 
   /
 
+/* =========================
+   SMART TV / TIZEN FIX
+   ТОЛЬКО ТЕЛЕВИЗОРЫ
+========================= */
+@media (hover: none) and (pointer: coarse) and (min-width: 1280px) {
+
+  /* УБИРАЕМ ТОРМОЗА */
+  * {
+    backdrop-filter: none !important;
+    filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Модалка без эффектов */
+  .modal,
+  .modal-panel,
+  .modal-content {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Видео — строго */
+  video {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #000;
+  }
+}
+

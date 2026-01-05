@@ -295,7 +295,13 @@
     <div class="modal-panel" role="document">
       <button class="modal-close" id="modalCloseBtn" aria-label="Закрыть модальное окно">✕</button>
       <div class="modal-content">
-        <video id="modalVideo" controls playsinline preload="metadata">
+        <video
+  id="modalVideo"
+  controls
+  preload="auto"
+  webkit-playsinline
+>
+
           <source src="" type="video/mp4">
           Ваш браузер не поддерживает видео.
         </video>
