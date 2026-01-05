@@ -100,12 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalVideo.pause();
       modalVideo.currentTime = 0;
       modalVideo.querySelector('source').src = '';
-     modalVideo.load();
-setTimeout(() => {
-  modalVideo.play();
-  modalVideo.focus();
-}, 300);
-
+      modalVideo.load();
     } catch (e) {}
     document.body.style.overflow = '';
   }

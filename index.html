@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Neiropodarok — реалистичные видеопоздравления от звёзд</title>
   <meta name="description" content="Neiropodarok — студия реалистичных видеопоздравлений. Оформление — 5 минут, готово — через 30 минут. Все видео помечены AI-generated и носят развлекательный характер." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -54,11 +54,11 @@
 
       <div class="hero-media" aria-hidden="true">
         <div class="phone-mockup floating" data-hover>
-          <img src="./images/photo_2026-01-05_09-40-40.jpg" alt="Phone mockup">
+          <img src="./images/photo_2026-01-05_09-40-35.jpg" alt="Phone mockup">
         </div>
 
         <img src="./images/photo_2026-01-05_09-40-22.jpg" class="celeb celeb-left floating" alt="celebrity male">
-        <img src="./images/photo_2026-01-05_09-40-35.jpg" class="celeb celeb-right floating" alt="celebrity female">
+        <img src="./images/photo_2026-01-05_09-40-40.jpg" class="celeb celeb-right floating" alt="celebrity female">
       </div>
     </div>
   </section>
@@ -275,10 +275,7 @@
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 3L3 10.5l4.5 1.7L10 21l3-3 2.5 2 5.5-16z" fill="currentColor"/></svg>
           </a>
 
-          <a class="social-btn social-vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer">
-  VK
-</a>
-
+          <a class="social-btn social-vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="VK">
             <!-- VK logo — SVG stylized glyph for better fidelity -->
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path fill="currentColor" d="M3.5 4.5h3.2c.5 0 .9.1 1.2.4.3.3.6.8.9 1.3.2.4.5.8.7 1 .2.2.3.3.5.3.1 0 .3-.1.5-.3.3-.3.6-.7 1-.9.4-.2.9-.3 1.5-.3h3.1v2.1c0 .3-.1.5-.3.7-.2.1-.5.2-.8.2h-1.7c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7v1.5c0 .3.1.5.3.7.2.2.4.3.7.3h1.7c.3 0 .6.1.8.3.2.2.3.4.3.7v1.6c0 .3-.1.5-.3.7-.2.2-.5.3-.8.3h-2c-.6 0-1 .2-1.3.6-.3.4-.6.8-1 1.2-.3.3-.7.5-1.2.5h-1.1c-.6 0-1-.2-1.3-.6-.2-.3-.5-.7-.9-1.1-.5-.5-1-1-1.6-1.6-.4-.4-.8-.7-1-1-.2-.2-.3-.4-.3-.6v-6.2z"/>
@@ -295,13 +292,7 @@
     <div class="modal-panel" role="document">
       <button class="modal-close" id="modalCloseBtn" aria-label="Закрыть модальное окно">✕</button>
       <div class="modal-content">
-        <video
-  id="modalVideo"
-  controls
-  preload="auto"
-  webkit-playsinline
->
-
+        <video id="modalVideo" controls playsinline preload="metadata">
           <source src="" type="video/mp4">
           Ваш браузер не поддерживает видео.
         </video>
